@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书页</title>
+    <style>
+        body{background-color: bisque;}
+        h1{text-align: center;}
+    </style>
+</head>
+<body>
+    <script>
+       function jump2()
+        {
+            window.location.href="file:///C:/Users/83808/Documents/HTML/添加页.html";
+        }
+    </script>
+    <h1 >图书列表</h1>
+    <table border="1" width = '50%' align = "center">
+        <tr id = "a1">
+            <td width = 100><img src="C:\Users\83808\Documents\HTML\图片1.jpg" width = "100" alt="兔子坡"></td>
+            <td >《兔子坡》</td>
+            <td >作者:罗伯特·罗素</td>
+            <td>出版社1</td>
+            <td >出版日期:y年y月</td>
+            <td >余量:100</td>
+        </tr>
+        <tr id = "a2">
+            <td width = 100><img src="C:\Users\83808\Documents\HTML\图片2.jpg" width = "100" alt="我们的秘密"></td>
+            <td >《我们的秘密》</td>
+            <td >作者:阿尔瓦伊</td>
+            <td>出版社2</td>
+            <td >出版日期:x年x月</td>
+            <td >余量:100</td>
+        </tr>
+        <input type="button" value="添加" onclick="jump2()" id = "bu1">
+    </table>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加页</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+      $(function()
+        {
+            var time = new Date();
+            var year = time.getFullYear();
+            var month = time.getMonth()+1;
+            if(month < 10){
+                month = "0"+month;
+            }
+            var day = time.getDay();
+            if(day < 10){
+                day = "0"+day;
+            }
+            $("#date1").attr("max",year+"-"+month+"-"+day);
+        })
+    </script>
+    <form action="">
+        书名：<input id = "bookname" type="text" required = "required">
+        作者：<input id = "author" type="text" required = "required">
+        出版日期：<input id = "date1" name = "date1" type="date" required = "required" max="">
+        库存：<input  name = "num" type="number" required = "required" min="0"><br>
+        图片上传：<input name = "img"type="file" required = "required"><br>
+        <input type="submit" id="b1" value="提交">
+    </form>
+    <p id = "p11"></p>
+</body>
+</html>
